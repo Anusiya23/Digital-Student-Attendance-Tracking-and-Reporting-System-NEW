@@ -1,0 +1,136 @@
+
+        /* Add styles for topbar and sidebar toggle */
+        .topbar {
+            background: linear-gradient(178deg, #71b7e6, #9b59b6);
+            padding: 0px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        .topbar-left {
+            display: flex;
+            align-items: center;
+        }
+
+        .topbar-left h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .topbar-left .menu-toggle {
+            cursor: pointer;
+            margin-right: 10px;
+            font-size: 24px;
+        }
+
+        .topbar-right {
+            position: relative;
+            display:flex;
+            align-items: center;
+            max-width: 10%;
+            font-size: 18px;
+        }
+
+        .topbar-right i {
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .welcome-dropdown {
+            display: none;
+            position:absolute;
+            top: 100%;
+            right: 0;
+            background-color: white;
+            border: 3px solid #ccc;
+            border-radius: 5px;
+            z-index: 1000;
+        }
+
+        .welcome-dropdown a {
+            display: block;
+            padding: 10px;
+            color: black;
+            text-decoration: none;
+        }
+
+        .welcome-dropdown a:hover {
+            background-color: lightskyblue;
+        }
+
+        /* Adjust sidebar to be below the topbar */
+        .side-content {
+            display: flex;
+            margin-top: 70px; /* Add margin to prevent overlap with the topbar */
+        }
+
+        .main-content {
+            margin-left: 40px; /* Ensure content is shifted to the right of the sidebar */
+            transition: margin-left 0.3s;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 20px;
+            height: 100vh;
+            margin-top: 20px; /* Add this to push it down below the topbar */
+        }
+        .sidebar {
+            width: 250px;
+            background: linear-gradient(175deg, #71b7e6, #9b59b6); /* Gradient background */
+            padding: 10px;
+            color: white;
+            height: calc(100vh - 60px); /* Full height minus topbar height */
+            transition: width 0.3s;
+            position: fixed;
+            top: 65px; /* Below the topbar */
+            left: 0;
+        }
+        
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar-link {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .sidebar-link i {
+            margin-right: 10px;
+        }
+
+        .content {
+            padding: 40px;
+            flex-grow: 1;
+            font-weight: bold;
+            margin-left: 250px; /* Ensure content is shifted to the right of the sidebar */
+            transition: margin-left 0.3s;
+            font-size:20px;
+        }
+
+        /* Hidden sidebar styles */
+        .hidden-sidebar {
+            width: 60px; /* Set width for hidden sidebar (to display only icons) */
+            overflow: hidden;
+        }
+
+        .hidden-sidebar .sidebar-link span {
+            display: none; /* Hide text when sidebar is collapsed */
+        }
+
+        .hidden-sidebar + .content {
+            margin-left: 60px; /* Adjust content width when sidebar is hidden */
+        }
+
+        

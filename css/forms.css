@@ -1,0 +1,270 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 210px; /* Adjust to match your header + topbar */
+            left: 0;
+            width: 250px;
+            height: calc(100vh - 210px); /* This keeps it within the visible viewport */
+            background: linear-gradient(175deg, #71b7e6, #9b59b6);
+            color: white;
+            padding: 10px;
+            z-index: 998;
+            transition: width 0.3s;
+            overflow-y: auto; /* Add this if sidebar has scrollable content */
+        }
+        
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            padding: 15px 0;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .sidebar ul li a {
+            color: white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: color 0.3s ease;
+        }
+        .sidebar ul li a i {
+            margin-right: 10px;
+        }
+
+        .sidebar ul li:hover {
+            background-color: #8e44ad;
+        }
+
+        /* Active class styling */
+        .sidebar ul li.active {
+            background-color: #6c3483;
+            font-weight: bold;
+        }
+
+        .sidebar ul li.active a {
+            color: #eef2f6;
+        }
+
+        h1 {
+            color: white;
+        }
+        h2 {
+            color:#333;
+        }
+ 
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+       }
+
+       label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    select, input {
+        width: 80%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        
+    }
+
+    select, input[type="text"], input[type="date"], input[type="number"] {
+        width: 80%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            background-color:white;
+        }
+
+        table, th, td {
+            border: 1px solid #333;
+            text-align: center;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #9b59b6;
+            color: white;
+            padding: 12px 8px;
+            font-weight: bold;
+        }
+
+        td {
+            padding: 12px 8px;
+        }
+
+        td + td {
+            border-left: 1px solid #333;
+        }
+ 
+        .absent-row {
+            background-color: #f5c6cb; /* Light red color for absent students */
+        }
+        .button {
+            background-color:#9b59b6;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 10px 0;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: dodgerblue ;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="text"], select {
+            width: 40%;
+            padding: 10px;
+            margin: 8px 0;
+            display: block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            
+        }
+
+        input[type="submit"] {
+            background-color: #9b59b6;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color:dodgerblue; 
+            transition: background-color 0.3s ease;
+        }/* Your existing styles */
+
+          /* CSS for attendance table */
+
+
+    
+        .attendance-options {
+            margin-top: 30px;
+        }
+
+        .attendance-options button {
+            background-color: #9b59b6;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+
+        .attendance-options button:hover {
+            background-color: dodgerblue;
+        }
+
+
+        select, input[type="text"], input[type="date"], input[type="number"] {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type="submit"] {
+            background-color: #9b59b6;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: dodgerblue;
+        }
+        
+        /* CSS for attendance table */
+        .attendance-table {
+            margin-top:30px;
+            margin-bottom:30px;
+            margin-left: 50px;
+            border-collapse: collapse;
+            width: 90%;
+            align-items:center;
+            position:relative;
+        }
+        
+        .attendance-table th, .attendance-table td {
+            border: 2px solid #333;
+            padding: 7px 5px;
+            text-align: center;
+        }
+        
+        .attendance-table th {
+            background-color: #9b59b6;
+            color:white;
+            padding: 10px ;
+        }
+        input[type="submit"] {
+            background-color: #9b59b6;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            margin-left: 400px;
+            margin-top: 5px;
+        }
+        .message-container {
+            margin-right : 10px; /* Space between the form and the message */
+            text-align:end;
+        }
+        

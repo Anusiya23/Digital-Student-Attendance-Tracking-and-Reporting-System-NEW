@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<style>
+     .college-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+       
+        background: white;
+        z-index: 1000;
+        padding: 10px 30px;
+        border-bottom: 2px solid #ddd;
+    }
+     .topbar {
+        position: fixed;
+        top: 110px; /* Adjusted to appear below header */
+        left: 0;
+        right: 0;
+        height: 70px;
+        background: linear-gradient(178deg, #71b7e6, #9b59b6);
+        z-index: 999;
+            padding: 0px 10px;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+          
+    }
+
+    .sidebar {
+    position: fixed;
+    top: 180px; /* Adjust to match your header + topbar */
+    left: 0;
+    width: 250px;
+    height: calc(100vh - 210px); /* This keeps it within the visible viewport */
+    background: linear-gradient(175deg, #71b7e6, #9b59b6);
+    color: white;
+    padding: 10px;
+    z-index: 998;
+    transition: width 0.3s;
+    overflow-y: auto; /* Add this if sidebar has scrollable content */
+}
+
+ .content {
+        margin-left: 250px;
+        padding: 30px;
+        overflow-y: auto;
+        height: calc(100vh - 300px);
+        font-weight: bold;
+        font-size: 20px;
+    }
+        .hidden-sidebar {
+            width: 60px; /* Set width for hidden sidebar (to display only icons) */
+            overflow: hidden;
+        }
+
+        .hidden-sidebar .sidebar-link span {
+            display: none; /* Hide text when sidebar is collapsed */
+        }
+
+        .hidden-sidebar + .content {
+            margin-left: 60px; /* Adjust content width when sidebar is hidden */
+        }
+        </style>
+        </head>
+        <body>
+            <div class="college-header"id="collegeHeader" >
+<div style="display: flex;line-height: 30px;height:80px; align-items:center; justify-content: center; background: white; padding: 10px 30px; border-bottom: 2px solid #ddd;">
+    <div style="display: flex; align-items: center;">
+        <img src="../img/vicas_logo.jpg" alt="VICAS Logo" style="height: 98px; margin-right: 40px;">
+        <div style="text-align:center;font-family:'Times New Roman', Times, serif">
+            <h1 style="margin: 0; font-size: 35px; color: #e91e63; font-weight: bold;letter-spacing:5px;">VIVEKANANDHA</h1>
+            <p style="margin: 0; font-size: 20px; color: #000;line-height: 35px;">
+                College of Arts and Sciences for Women (Autonomous)<br>
+               </p>
+                
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
